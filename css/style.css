@@ -195,3 +195,7 @@ div ul .redesSociales{
 .producto__turno{
     color:rgb(24, 24, 117)  ;
 }
+/*mobile < 576px*/
+@media screen and (max-width: 576px) {
+    
+}
