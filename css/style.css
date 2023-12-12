@@ -53,12 +53,12 @@ header h1 {
     color: black;
 }
 
-header .navbar-desktop {
+header nav {
     padding: 20px 0;
     list-style-type: none;
 }
 
-header .navbar-desktop ul {
+header nav ul {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
@@ -67,7 +67,7 @@ header .navbar-desktop ul {
     margin-top: 10px;
 }
 
-header .navbar-desktop ul li {
+header nav ul li {
     margin: 0 20px;
     display: inline;
 }
@@ -203,17 +203,14 @@ div ul .redesSociales{
 }
 /*mobile < 576px*/
 @media screen and (max-width: 576px) {
-    .navbar-mobile{
+    .navbar-desktop{
         display: initial;
     }
-
-    .navbar-desktop{
-        display: none;
-    }
-    .mapacolumns{
-        flex-direction: column;
-    }
-    .ubicacioncolumns{
-        flex-direction: column;
-    }
 }
+    .navbar-mobile{
+        display: none
+    }
+
+    @media screen (max-width:768px) and (max-height: 1023px) {
+
+    }
