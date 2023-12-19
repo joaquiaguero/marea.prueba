@@ -113,6 +113,10 @@ header>div {
     justify-content: center;
     flex-wrap: wrap;
 }
+.datos{
+    margin-left: 10px;
+    margin-top: 5px;
+}
 
 /* Otros estilos... */
 
@@ -209,4 +213,5 @@ div ul .redesSociales{
  .navbar-desktop{
     display: none;
  }
+
 }
