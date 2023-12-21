@@ -19,11 +19,22 @@ h1 .titulo {
 /* Otros estilos... */
 .portada {
     width: 70px;
+    color: black;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.boton {
+    padding: 5px 10px;
+    color: black;
+}
+
+.portadaGeneral {
+    background-image: url(https://pymstatic.com/98795/conversions/diferencias-mar-oceano-social.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .texto {
@@ -45,7 +56,9 @@ header {
 
 header .headerLeft {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    margin-top: 5px;
 }
 
 header h1 {
@@ -99,8 +112,8 @@ header>div {
     margin: 20px;
 }
 
-.boton {
-    padding: 5px 10px;
+.cardServicios h3 {
+    color: black
 }
 
 .cardServicio p {
@@ -108,10 +121,15 @@ header>div {
     font-weight: 300;
 }
 
+.cardServicios {
+    background-color: rgb(57, 166, 170);
+}
+
 .cardConteiner {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 
 .datos {
@@ -182,14 +200,13 @@ div .redes {
 
 .redes {
     display: flex;
-    justify-content: space-evenly
+    justify-content: initial
 }
 
 .redesSociales {
     display: flex;
     list-style-type: none;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: start
 }
 
 div ul .redesSociales {
@@ -217,8 +234,8 @@ div ul .redesSociales {
     color: rgb(24, 24, 117);
 }
 
-/*MOBILE < 576px*/
-@media screen and (max-width: 576px) {
+/*MOBILE*/
+@media screen and (max-width: 768px) {
     .navbar-mobile {
         display: initial;
     }
@@ -232,8 +249,39 @@ div ul .redesSociales {
         flex-direction: column;
     }
 
-    footer {
+    .mapa {
         display: flex;
+        justify-content: space-evenly;
         flex-direction: column;
     }
+
+    .redes {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .redesSociales {
+        justify-content: start;
+    }
+}
+
+/*TABLET*/
+@media screen and (max-width:1024px) {
+    .mapa {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .redesSociales {
+        justify-content: start;
+    }
+
 }
