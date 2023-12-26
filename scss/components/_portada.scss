@@ -1,0 +1,27 @@
+/* Otros estilos... */
+.portada {
+    width: 70px;
+    color: $colorPrimario text-align center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.boton {
+    padding: 5px 10px;
+    color: $colorPrimario
+}
+
+.portadaGeneral {
+    background-image: url(https://pymstatic.com/98795/conversions/diferencias-mar-oceano-social.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.texto {
+    font-size: 17px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}

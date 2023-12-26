@@ -1,0 +1,40 @@
+/* Estilos para los servicios */
+#servicios {
+    padding-top: 40px;
+}
+
+.cardServicios {
+    width: 250px;
+    box-shadow: 0px 6px 12px -2px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+}
+
+.cardServicios h3 {
+    color: $colorPrimario
+}
+
+.cardServicio p {
+    margin: 20px;
+    font-weight: 300;
+}
+
+.cardServicios {
+    background-color: rgb(57, 166, 170);
+}
+
+.cardConteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.datos {
+    margin-left: 10px;
+    margin-top: 5px;
+}

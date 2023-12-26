@@ -1,287 +1,306 @@
+@charset "UTF-8";
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /* Estilos para el título */
 h1 .titulo {
-    font-family: 'Bad Script', cursive;
-    font-size: 20px;
-    text-align: center;
-    display: flex;
+  font-family: "Bad Script", cursive;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
 }
 
 .bienvenida {
-    font-weight: 100;
-    font-style: italic;
-    text-align: center;
-}
-
-/* Otros estilos... */
-.portada {
-    width: 70px;
-    color: black;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.boton {
-    padding: 5px 10px;
-    color: black;
-}
-
-.portadaGeneral {
-    background-image: url(https://pymstatic.com/98795/conversions/diferencias-mar-oceano-social.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.texto {
-    font-size: 17px;
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-}
-
-/* Estilos para el encabezado */
-header {
-    margin: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-    align-items: center;
-    /*alinea verticalmente los elementos del header*/
-}
-
-header .headerLeft {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5px;
-}
-
-header h1 {
-    font-size: 20px;
-    color: black;
-}
-
-header .navbar-desktop {
-    padding: 20px 0;
-    list-style-type: none;
-}
-
-header .navbar-desktop ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-    /*alinea los elementos al final (derecha)*/
-    margin-bottom: 0%;
-    margin-top: 10px;
-}
-
-header .navbar-desktop ul li {
-    margin: 0 20px;
-    display: inline;
-}
-
-header>div {
-    display: flex;
-    align-items: center;
-
-}
-
-.navbar-mobile {
-    display: none;
-}
-
-/* Otros estilos... */
-
-/* Estilos para los servicios */
-#servicios {
-    padding-top: 40px;
-}
-
-.cardServicios {
-    width: 250px;
-    box-shadow: 0px 6px 12px -2px;
-    padding: 20px;
-    border-radius: 20px;
-    text-align: center;
-    display: inline-block;
-    margin: 20px;
-}
-
-.cardServicios h3 {
-    color: black
-}
-
-.cardServicio p {
-    margin: 20px;
-    font-weight: 300;
-}
-
-.cardServicios {
-    background-color: rgb(57, 166, 170);
-}
-
-.cardConteiner {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-}
-
-.datos {
-    margin-left: 10px;
-    margin-top: 5px;
-}
-
-/* Otros estilos... */
-
-/* Estilos para el pie de página */
-.imagenes {
-    width: 30px;
+  font-weight: 100;
+  font-style: italic;
+  text-align: center;
 }
 
 /*enlaces globales*/
-a {
-    text-decoration: none;
-    color: black;
+h1 {
+  font-size: 20px;
 }
 
-/*link que NO fue visitado*/
-a:link {
-    color: black;
+div h3 {
+  color: dimgray;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*mientras presiono sobre el elemento*/
 a:active {
-    color: aqua;
+  color: aqua;
 }
 
 /*link que fue visitado*/
 a:visited {
-    color: grey;
+  color: grey;
 }
 
 /*mientras paso por encima del cursor*/
 a:hover {
-    color: rgb(52, 52, 117);
+  color: rgb(52, 52, 117);
 }
 
-h1 {
-    font-size: 20px;
+/*link que NO fue visitado*/
+a:link {
+  color: black;
 }
 
-div h3 {
-    color: dimgray;
-}
-
-.ubicacion {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: "300" height="200" style="border:0;"
-}
-
-.ayuda {
-    text-align: center;
-}
-
-.mapa {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-div .redes {
-    margin: 100px;
-}
-
-.redes {
-    display: flex;
-    justify-content: initial
-}
-
-.redesSociales {
-    display: flex;
-    list-style-type: none;
-    justify-content: start
-}
-
-div ul .redesSociales {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#pie {
-    height: 400px;
-}
-
-.producto__oferta {
-    color: rgb(24, 24, 117);
-}
-
-.producto__precio {
-    color: rgb(24, 24, 117);
-}
-
-.producto__dia {
-    color: rgb(24, 24, 117);
-}
-
-.producto__turno {
-    color: rgb(24, 24, 117);
+/* Estilos para el pie de página */
+.imagenes {
+  width: 30px;
 }
 
 /*MOBILE*/
 @media screen and (max-width: 768px) {
-    .navbar-mobile {
-        display: initial;
-    }
-
-    .navbar-desktop {
-        display: none;
-    }
-
-    body {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .mapa {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
-
-    .redes {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
-
-    .redesSociales {
-        justify-content: start;
-    }
+  .navbar-mobile {
+    display: initial;
+  }
+  .navbar-desktop {
+    display: none;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .mapa {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+  }
+  .redes {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+  }
+  .redesSociales {
+    justify-content: start;
+  }
 }
-
 /*TABLET*/
-@media screen and (max-width:1024px) {
-    .mapa {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
-
-    .redes {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
-
-    .redesSociales {
-        justify-content: start;
-    }
-
+@media screen and (max-width: 1024px) {
+  .mapa {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+  }
+  .redes {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+  }
+  .redesSociales {
+    justify-content: start;
+  }
 }
+header .navbar-desktop {
+  padding: 20px 0;
+  list-style-type: none;
+}
+
+header .navbar-desktop ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  /*alinea los elementos al final (derecha)*/
+  margin-bottom: 0%;
+  margin-top: 10px;
+}
+
+header .navbar-desktop ul li {
+  margin: 0 20px;
+  display: inline;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+/* Otros estilos... */
+.portada {
+  width: 70px;
+  color: black text-align center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.boton {
+  padding: 5px 10px;
+  color: black;
+}
+
+.portadaGeneral {
+  background-image: url(https://pymstatic.com/98795/conversions/diferencias-mar-oceano-social.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.texto {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+.ubicacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: "300";
+  height: "200" style "border:0;";
+}
+
+.ayuda {
+  text-align: center;
+}
+
+.mapa {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+div .redes {
+  margin: 100px;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column justify-content initial;
+}
+
+.redesSociales {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  justify-content: start;
+}
+
+div ul .redesSociales {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#pie {
+  height: 400px;
+}
+
+.producto__oferta {
+  color: rgb(24, 24, 117);
+}
+
+.producto__precio {
+  color: rgb(24, 24, 117);
+}
+
+.producto__dia {
+  color: rgb(24, 24, 117);
+}
+
+.producto__turno {
+  color: rgb(24, 24, 117);
+}
+
+/* Estilos para el encabezado */
+header {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  /*alinea verticalmente los elementos del header*/
+}
+
+header .headerLeft {
+  align-items: center;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  font-size: 20px;
+  color: black;
+}
+
+header .navbar-desktop {
+  padding: 20px 0;
+  list-style-type: none;
+}
+
+header .navbar-desktop ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /*alinea los elementos al final (derecha)*/
+  margin-bottom: 0%;
+  margin-top: 10px;
+}
+
+header .navbar-desktop ul li {
+  margin: 0 20px;
+  display: inline;
+}
+
+header > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para los servicios */
+#servicios {
+  padding-top: 40px;
+}
+
+.cardServicios {
+  width: 250px;
+  box-shadow: 0px 6px 12px -2px;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+  margin: 20px;
+}
+
+.cardServicios h3 {
+  color: black;
+}
+
+.cardServicio p {
+  margin: 20px;
+  font-weight: 300;
+}
+
+.cardServicios {
+  background-color: rgb(57, 166, 170);
+}
+
+.cardConteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.datos {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

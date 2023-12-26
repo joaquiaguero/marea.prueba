@@ -1,0 +1,61 @@
+.ubicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: "300";
+    height: "200" style"border:0;"
+}
+
+.ayuda {
+    text-align: center;
+}
+
+.mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+div .redes {
+    margin: 100px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column
+    justify-content initial
+}
+
+.redesSociales {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: start
+}
+
+div ul .redesSociales {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#pie {
+    height: 400px;
+}
+
+.producto__oferta {
+    color: rgb(24, 24, 117);
+}
+
+.producto__precio {
+    color: rgb(24, 24, 117);
+}
+
+.producto__dia {
+    color: rgb(24, 24, 117);
+}
+
+.producto__turno {
+    color: rgb(24, 24, 117);
+}
